@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prasad Jadhav - Software Developer Portfolio. Specialized in Python, Java, SQL, and Web Technologies.">
+    <meta name="keywords" content="Prasad Jadhav, Software Developer, Python Developer, Java Developer, Web Developer, Portfolio">
+    <meta name="author" content="Prasad Jadhav">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Prasad Jadhav - Software Developer">
+    <meta property="og:description" content="Aspiring Software Developer with strong fundamentals in Python, Java, SQL, and Web Technologies.">
+    
+    <title>Prasad Jadhav | Software Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-spinner"></div>
+            <div class="preloader-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text"><PJ/></span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Welcome to my portfolio</div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Prasad Jadhav</span>
+            </h1>
+            <h2 class="hero-subtitle">
+                <span class="typing-text" id="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </h2>
+            <p class="hero-description">
+                Aspiring Software Developer with strong fundamentals in Python, Java, SQL, and Web Technologies. 
+                Passionate about problem-solving and building real-world applications.
+            </p>
+            <div class="hero-buttons">
+                <a href="assets/resume/Prasad_Jadhav_Resume.pdf" class="btn btn-primary" download="Prasad_Jadhav_Resume.pdf">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://linkedin.com/in/prasadjadhav" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/prasadjadhav" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:prasadjadhav1554@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-user"></i></span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-image" data-tilt>
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <div class="image-border-ring"></div>
+                        <img src="assets/images/154228-Picsart-AiImageEnhancer.jpg.jpeg" alt="Prasad Jadhav - Software Developer" class="about-img" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h3 class="about-name">Prasad Jadhav</h3>
+                    <p class="about-role">Software Developer</p>
+                    <p class="about-description">
+                        Aspiring Software Developer with strong fundamentals in Python, Java, SQL, and Web Technologies. 
+                        Passionate about problem-solving and building real-world applications that make a difference. 
+                        Currently pursuing MSc in Computer Application, constantly learning and exploring new technologies 
+                        to enhance my skills and create innovative solutions.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>MSc Computer Application (Pursuing)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>5+ Projects Completed</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-award"></i>
+                            <span>Certified Python Developer</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1">0</span>
+                            <span class="stat-label">Internship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-tools"></i></span>
+                Skills & Expertise
+            </h2>
+            <p class="section-subtitle">My technical skills and proficiency levels</p>
+            
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skills-category">
+                    <h3 class="category-title"><i class="fas fa-laptop-code"></i> Programming</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <h4>Java</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <h4>C</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <h4>PHP</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skills-category">
+                    <h3 class="category-title"><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML5</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="skills-category">
+                    <h3 class="category-title"><i class="fas fa-server"></i> Database & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>MySQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-flask"></i></div>
+                            <h4>Jupyter Notebook</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-vr-cardboard"></i></div>
+                            <h4>Unity Editor</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concepts -->
+                <div class="skills-category">
+                    <h3 class="category-title"><i class="fas fa-brain"></i> Concepts</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-object-group"></i></div>
+                            <h4>OOP</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                            <h4>Data Structures</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-briefcase"></i></span>
+                Experience
+            </h2>
+            <p class="section-subtitle">My professional journey</p>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content" data-tilt>
+                        <div class="timeline-badge">Internship</div>
+                        <h3 class="timeline-title">Python Intern</h3>
+                        <h4 class="timeline-company">Vaults of Code</h4>
+                        <div class="timeline-duration">
+                            <i class="fas fa-calendar-alt"></i> 2024
+                        </div>
+                        <p class="timeline-description">
+                            Completed intensive Python development internship focusing on web development, 
+                            data structures, and object-oriented programming. Worked on real-world projects 
+                            and gained hands-on experience in Python frameworks and best practices.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-folder-open"></i></span>
+                Projects
+            </h2>
+            <p class="section-subtitle">Some of my recent work</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=250&fit=crop" alt="School Website">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">School Website</h3>
+                        <p class="project-description">
+                            A responsive school website with modern design, featuring sections for academics, 
+                            admissions, faculty, and student life. Built with clean HTML and CSS.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" alt="Java Chat Application">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Java Chat Application</h3>
+                        <p class="project-description">
+                            A real-time chat application built with Java Swing for the frontend and 
+                            SQL Server for data storage. Features include user authentication and message history.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Swing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop" alt="BMI Calculator">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BMI Calculator</h3>
+                        <p class="project-description">
+                            A Python-based BMI calculator with a graphical interface. Calculates Body Mass Index 
+                            and provides health recommendations based on WHO standards.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">GUI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&h=250&fit=crop" alt="AR VR Ferrari App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AR VR Ferrari App</h3>
+                        <p class="project-description">
+                            An immersive AR/VR experience showcasing Ferrari cars using Unity. 
+                            Users can explore car interiors and exteriors in a virtual environment.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">AR/VR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=250&fit=crop" alt="Stock Market Advisor">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Stock Market Advisor</h3>
+                        <p class="project-description">
+                            A comprehensive stock market analysis website with real-time data visualization 
+                            using TradingView widgets. Built with PHP backend and MySQL database.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">TradingView</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-graduation-cap"></i></span>
+                Education
+            </h2>
+            <p class="section-subtitle">My academic background</p>
+            
+            <div class="education-grid">
+                <div class="education-card" data-tilt>
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-badge">Current</div>
+                    <h3 class="education-degree">MSc Computer Application</h3>
+                    <p class="education-institute">Pursuing</p>
+                    <div class="education-year">
+                        <i class="fas fa-calendar"></i> 2024 - Present
+                    </div>
+                    <p class="education-description">
+                        Advanced studies in computer applications, focusing on software development, 
+                        data structures, algorithms, and emerging technologies.
+                    </p>
+                </div>
+
+                <div class="education-card" data-tilt>
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-badge">Completed</div>
+                    <h3 class="education-degree">B.Voc Software Development</h3>
+                    <p class="education-institute">Completed</p>
+                    <div class="education-year">
+                        <i class="fas fa-calendar"></i> 2021 - 2024
+                    </div>
+                    <p class="education-description">
+                        Specialized in software development with hands-on training in multiple 
+                        programming languages and development frameworks.
+                    </p>
+                    <div class="education-grade">
+                        <span class="grade-label">CGPA:</span>
+                        <span class="grade-value">8.62</span>
+                    </div>
+                </div>
+
+                <div class="education-card" data-tilt>
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-badge">Completed</div>
+                    <h3 class="education-degree">Higher Secondary (HSC)</h3>
+                    <p class="education-institute">Completed</p>
+                    <div class="education-year">
+                        <i class="fas fa-calendar"></i> 2019 - 2021
+                    </div>
+                    <p class="education-description">
+                        Completed higher secondary education with focus on Science stream.
+                    </p>
+                    <div class="education-grade">
+                        <span class="grade-label">Percentage:</span>
+                        <span class="grade-value">83.17%</span>
+                    </div>
+                </div>
+
+                <div class="education-card" data-tilt>
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-badge">Completed</div>
+                    <h3 class="education-degree">Secondary School (SSC)</h3>
+                    <p class="education-institute">Completed</p>
+                    <div class="education-year">
+                        <i class="fas fa-calendar"></i> 2019
+                    </div>
+                    <p class="education-description">
+                        Completed secondary school education with strong academic foundation.
+                    </p>
+                    <div class="education-grade">
+                        <span class="grade-label">Percentage:</span>
+                        <span class="grade-value">83.60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications section" id="certifications">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-certificate"></i></span>
+                Certifications & Achievements
+            </h2>
+            <p class="section-subtitle">My accomplishments and recognitions</p>
+            
+            <div class="cert-grid">
+                <div class="cert-card" data-tilt>
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="cert-title">Python Internship Certification</h3>
+                    <p class="cert-issuer">Vaults of Code</p>
+                    <p class="cert-description">
+                        Successfully completed Python development internship with hands-on 
+                        experience in web development and data structures.
+                    </p>
+                    <div class="cert-year">2024</div>
+                </div>
+
+                <div class="cert-card" data-tilt>
+                    <div class="cert-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="cert-title">First Prize in Kho-Kho</h3>
+                    <p class="cert-issuer">Sports Achievement</p>
+                    <p class="cert-description">
+                        Won first prize in Kho-Kho tournament, demonstrating teamwork, 
+                        strategy, and athletic excellence.
+                    </p>
+                    <div class="cert-year">Achievement</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-paper-plane"></i></span>
+                Get In Touch
+            </h2>
+            <p class="section-subtitle">Let's work together</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Connect</h3>
+                    <p class="contact-description">
+                        I'm always open to discussing new projects, creative ideas, 
+                        or opportunities to be part of your vision. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:prasadjadhav1554@gmail.com">prasadjadhav1554@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+918380015542">+91 83800 15542</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <span>India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/prasadjadhav" target="_blank" rel="noopener" class="social-btn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/prasadjadhav" target="_blank" rel="noopener" class="social-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/prasadjadhav" target="_blank" rel="noopener" class="social-btn">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/prasadjadhav" target="_blank" rel="noopener" class="social-btn">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder=" ">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text"><PJ/></span>
+                    <p class="footer-tagline">Building digital experiences with code and creativity.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/prasadjadhav" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/prasadjadhav" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/prasadjadhav" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Prasad Jadhav. All rights reserved.</p>
+                <p>Designed & Built with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Particle.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Vanilla Tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
